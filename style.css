@@ -22,15 +22,29 @@ header > img{
 }
 
 nav ul{
-    background-color: black;
     list-style: none;
     text-align: center;
-    word-spacing: 2rem;
+    height: 8vh;
 }
 
 nav li{
-    color: white;
+    height: 48px;
+    width: 80px;
     display: inline-block;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+nav ul li a{
+    display: block;
+    margin-top: 25%;
+    color: #000;
+    font-size: 24px;
+    font-weight: 680;
+}
+
+nav ul li a:hover{
+    color: #c2a11c;
 }
 
 section{
@@ -39,12 +53,29 @@ section{
 
 article{
     flex: 1;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+#promotion{
+    background-image: url(https://github.com/thepratham05/restaurant-landing-page/blob/master/pasta.jpeg)
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer{
     display: flex;
+    align-items: center;
 }
 
 footer div{
     flex: 1;
+    padding: 10px;
+}
+
+footer div p{
+    text-align: right;
 }
