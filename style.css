@@ -9,94 +9,106 @@ body{
 
 h1{
     font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h2{
     font-size: 2rem;
 }
 
-header > img{
+header img{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+nav{
+    background-color: #333333;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
 nav ul{
     list-style: none;
+    font-size: 2rem;
     text-align: center;
-    height: 8vh;
+    padding-inline-start: 0rem;
 }
 
 nav li{
-    height: 48px;
-    width: 80px;
     display: inline-block;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin: 0.25rem;
 }
 
-nav ul li a{
-    display: block;
-    margin-top: 25%;
-    color: #000;
-    font-size: 24px;
-    font-weight: 680;
+nav ul a{
+    color: #edefee;
+    text-decoration: none;
 }
 
-nav ul li a:hover{
-    color: #c2a11c;
+nav ul a:active{
+    text-decoration: underline;
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.1rem;
 }
 
 section{
     display: flex;
+    gap: 2rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 article{
     flex: 1;
-    border-radius: 12px;
-    padding: 15px;
+    border-radius: 1rem;
 }
 
-#promotion{
-    background-color: rgb(231, 231, 179);
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+article img{
+    max-width: 100%;
+}
+
+article ul{
+    list-style: none;
+}
+
+main article{
+    background-color: #fbdabb79;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+hero{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3));
     background-size: cover;
+    background-position: 75%;
+    color: white;
 }
 
-.card {
-    border: 1px solid #c2c2c2;
-    border-radius: 10, 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin-top: 1%;
-    border-radius: 25px 1px 25px 1px;
-    margin: 5px;   
-}
-
-.card:hover {
-    box-shadow:
-            0 1px 1px hsl(0deg 0% 0% / 0.075),
-            0 2px 2px hsl(0deg 0% 0% / 0.075),
-            0 4px 4px hsl(0deg 0% 0% / 0.075),
-            0 8px 8px hsl(0deg 0% 0% / 0.075),
-            0 16px 16px hsl(0deg 0% 0% / 0.075);
-    transition: 0.5s ease;
+#hero p{
+    max-width: 75%;
 }
 
 footer{
     display: flex;
-    align-items: center;
+    margin: 1rem;
+    gap: 2rem 1rem;
 }
 
-footer div{
-    flex: 1;
-    padding: 10px;
+footer img{
+    max-width: 50%;
 }
 
-footer div p{
+footer p{
+    border-top: #333333;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     text-align: right;
 }
